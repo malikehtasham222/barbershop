@@ -1,11 +1,11 @@
 part of '../sign_up_page.dart';
 
-class _addressFormSection extends StatelessWidget {
+class _AddressFormSection extends StatelessWidget {
   final String title;
   final TextEditingController? locationController;
   final TextEditingController? countryController;
 
-  const _addressFormSection({
+  const _AddressFormSection({
     required this.title,
     required this.locationController,
     required this.countryController,
@@ -28,12 +28,17 @@ class _addressFormSection extends StatelessWidget {
               child: Text(title, style: theme.textTheme.headlineLarge),
             ),
             const SizedBox(height: Const.space25),
-            CustomTextFormField(
-              controller: locationController!,
+            _BuildTextField(
+              textController: locationController!,
               hintText: AppLocalizations.of(context)!.location,
+              textFieldType: TextFieldType.Text,
             ),
             const SizedBox(height: Const.space15),
-            _BuildCountryNameTextField(countryController: countryController!),
+            _BuildTextField(
+              textController: countryController!,
+              hintText: AppLocalizations.of(context)!.select_country,
+              textFieldType: TextFieldType.Text,
+            ),
             const SizedBox(height: Const.space15),
           ],
         ),

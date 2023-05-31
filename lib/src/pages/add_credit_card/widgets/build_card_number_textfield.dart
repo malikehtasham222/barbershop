@@ -15,7 +15,7 @@ class _BuildCardNumberTextField extends StatelessWidget {
       child: CustomTextFormField(
         controller: controller,
         hintText: AppLocalizations.of(context)!.card_number,
-        textInputType: TextInputType.number,
+        textFieldType: TextFieldType.Number,
         onChanged: onChanged,
       ),
     );

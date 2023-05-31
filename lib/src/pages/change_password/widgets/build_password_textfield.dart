@@ -1,14 +1,16 @@
 part of '../change_password_page.dart';
 
-class _BuildCurrentPasswordTextField extends StatelessWidget {
-  const _BuildCurrentPasswordTextField({
+class _BuildPasswordTextField extends StatelessWidget {
+  const _BuildPasswordTextField({
     Key? key,
     required this.controller,
+    required this.hintText,
     required this.obscureText,
     required this.onObscureTextTap,
   }) : super(key: key);
 
   final TextEditingController controller;
+  final String hintText;
   final bool obscureText;
   final VoidCallback onObscureTextTap;
 
@@ -19,8 +21,8 @@ class _BuildCurrentPasswordTextField extends StatelessWidget {
     return CustomTextFormField(
       controller: controller,
       obscureText: obscureText,
-      textInputType: TextInputType.text,
-      hintText: AppLocalizations.of(context)!.password,
+      textFieldType: TextFieldType.Password,
+      hintText: AppLocalizations.of(context)!.password_confirmation,
       suffixIcon: IconButton(
         color: theme.primaryColor,
         onPressed: onObscureTextTap,

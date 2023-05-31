@@ -54,7 +54,7 @@ class _PaypalScreenState extends State<PaypalScreen> {
             CustomTextFormField(
               controller: _controller,
               hintText: AppLocalizations.of(context)!.email_address,
-              textInputType: TextInputType.emailAddress,
+              textFieldType: TextFieldType.Email,
             ),
             const SizedBox(height: Const.space25),
             CustomElevatedButton(

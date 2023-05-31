@@ -19,7 +19,7 @@ class _BuildPasswordTextField extends StatelessWidget {
     return CustomTextFormField(
       controller: passwordController,
       obscureText: obscureText,
-      textInputType: TextInputType.text,
+      textFieldType: TextFieldType.Password,
       hintText: AppLocalizations.of(context)!.password,
       suffixIcon: IconButton(
         color: theme.primaryColor,

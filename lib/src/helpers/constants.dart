@@ -69,6 +69,7 @@ class Assets {
   static const String onBoarding1 = 'assets/on_boarding_1.jpg';
   static const String onBoarding2 = 'assets/on_boarding_2.jpg';
   static const String onBoarding3 = 'assets/on_boarding_3.jpg';
+  static const String done = 'assets/done.png';
   static const String otp = 'assets/otp.svg';
   static const String paypal = 'assets/paypal.svg';
   static const String profilePhoto =

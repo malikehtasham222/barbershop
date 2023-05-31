@@ -12,7 +12,7 @@ class _BuildPhoneTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomTextFormField(
       controller: controller,
-      textInputType: TextInputType.phone,
+      textFieldType: TextFieldType.PhoneNumber,
       hintText: AppLocalizations.of(context)!.phone_number,
     );
   }

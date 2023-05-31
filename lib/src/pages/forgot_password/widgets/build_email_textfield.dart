@@ -12,7 +12,7 @@ class _BuildEmailTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomTextFormField(
       controller: emailController,
-      textInputType: TextInputType.emailAddress,
+      textFieldType: TextFieldType.Email,
       hintText: AppLocalizations.of(context)!.email_address,
     );
   }

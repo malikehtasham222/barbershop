@@ -6,11 +6,13 @@ class _BuildPasswordTextField extends StatelessWidget {
     required this.obscureText,
     required this.passwordController,
     required this.onObscureTextTap,
+    required this.hintText,
   }) : super(key: key);
 
   final bool obscureText;
   final TextEditingController passwordController;
   final VoidCallback onObscureTextTap;
+  final String hintText;
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +21,8 @@ class _BuildPasswordTextField extends StatelessWidget {
     return CustomTextFormField(
       obscureText: obscureText,
       controller: passwordController,
-      hintText: AppLocalizations.of(context)!.password,
+      textFieldType: TextFieldType.Password,
+      hintText: hintText,
       suffixIcon: IconButton(
         onPressed: onObscureTextTap,
         color: theme.primaryColor,

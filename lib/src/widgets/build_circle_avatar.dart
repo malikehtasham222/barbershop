@@ -1,11 +1,11 @@
-part of '../profile_edit_page.dart';
+part of '../pages/profile_edit/profile_edit_page.dart';
 
-class _BuildCircleAvatar extends StatelessWidget {
+class BuildCircleAvatar extends StatelessWidget {
   final String image;
   final VoidCallback onChangeImageTap;
   final File? file;
 
-  const _BuildCircleAvatar({
+  const BuildCircleAvatar({
     Key? key,
     required this.image,
     required this.onChangeImageTap,
@@ -24,12 +24,15 @@ class _BuildCircleAvatar extends StatelessWidget {
             (file == null)
                 ? CircleAvatar(
                     radius: 60.0,
-                    backgroundColor: theme.unselectedWidgetColor,
-                    backgroundImage: CachedNetworkImageProvider(image),
-                  )
+                    backgroundColor: theme.hintColor,
+                    child: Icon(
+                      FeatherIcons.camera,
+                      color: Colors.white,
+                      size: Screens.width(context) / 7,
+                    ))
                 : CircleAvatar(
                     radius: 60.0,
-                    backgroundColor: theme.unselectedWidgetColor,
+                    backgroundColor: theme.hintColor,
                     backgroundImage: FileImage(file!),
                   ),
             InkWell(

@@ -49,7 +49,7 @@ class _BuildExpDateAndCvv extends StatelessWidget {
             child: CustomTextFormField(
               controller: controller,
               hintText: AppLocalizations.of(context)!.cvv,
-              textInputType: TextInputType.number,
+              textFieldType: TextFieldType.Number,
               onChanged: onChanged,
             ),
           ),

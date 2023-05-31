@@ -51,24 +51,27 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
             style: theme.textTheme.bodyLarge,
           ),
           const SizedBox(height: Const.space25),
-          _BuildCurrentPasswordTextField(
+          _BuildPasswordTextField(
             controller: _currentPasswordController,
+            hintText: AppLocalizations.of(context)!.current_password,
             obscureText: _obscureText,
             onObscureTextTap: () {
               setState(() => _obscureText = !_obscureText);
             },
           ),
           const SizedBox(height: Const.space15),
-          _BuildNewPasswordTextField(
+          _BuildPasswordTextField(
             controller: _newPasswordController,
+            hintText: AppLocalizations.of(context)!.new_password,
             obscureText: _obscureText,
             onObscureTextTap: () {
               setState(() => _obscureText = !_obscureText);
             },
           ),
           const SizedBox(height: Const.space15),
-          _BuildPasswordConfirmationTextField(
+          _BuildPasswordTextField(
             controller: _passwordConfirmationController,
+            hintText: AppLocalizations.of(context)!.password_confirmation,
             obscureText: _obscureText,
             onObscureTextTap: () {
               setState(() => _obscureText = !_obscureText);

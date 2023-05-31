@@ -9,6 +9,4 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:get/get.dart';
 
 part 'screens/change_password_screen.dart';
-part 'widgets/build_current_password_textfield.dart';
-part 'widgets/build_password_confirmation_textfield.dart';
-part 'widgets/build_new_password_textfield.dart';
+part 'widgets/build_password_textfield.dart';

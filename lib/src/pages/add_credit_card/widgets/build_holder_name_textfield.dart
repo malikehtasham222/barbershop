@@ -17,7 +17,7 @@ class _BuildHolderNameTextField extends StatelessWidget {
       child: CustomTextFormField(
         controller: controller,
         hintText: AppLocalizations.of(context)!.card_holder_name,
-        textInputType: TextInputType.text,
+        textFieldType: TextFieldType.Text,
         onChanged: onChanged,
       ),
     );

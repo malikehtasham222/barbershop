@@ -37,6 +37,7 @@ dependencies:
   url_launcher: ^6.1.11
   image_cropper: ^4.0.1
   image_picker: ^0.8.7+5
+  form_field_validator: ^1.1.0
 
 dev_dependencies:
   flutter_test:

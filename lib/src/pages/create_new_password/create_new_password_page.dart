@@ -9,4 +9,3 @@ import 'package:get/get.dart';
 
 part 'screens/create_new_password_screen.dart';
 part 'widgets/build_password_textfield.dart';
-part 'widgets/build_password_confirmation_textfield.dart';

@@ -52,13 +52,15 @@ class _CreateNewPasswordScreenState extends State<CreateNewPasswordScreen> {
           _BuildPasswordTextField(
             passwordController: _passwordController,
             obscureText: _obscureText,
+            hintText: AppLocalizations.of(context)!.password,
             onObscureTextTap: () {
               setState(() => _obscureText = !_obscureText);
             },
-          ), 
+          ),
           const SizedBox(height: Const.space15),
-          _BuildPasswordConfirmationTextField(
-            controller: _passwordConfirmationController,
+          _BuildPasswordTextField(
+            passwordController: _passwordConfirmationController,
+            hintText: AppLocalizations.of(context)!.password_confirmation,
             obscureText: _obscureText,
             onObscureTextTap: () {
               setState(() => _obscureText = !_obscureText);
